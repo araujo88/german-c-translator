@@ -33,15 +33,23 @@ size_t got_data(char *buffer, size_t itemsize, size_t nitems, void *ignorethis) 
 
 int main(int argc, char *argv[]) {
     CURL *curl = curl_easy_init(); // initialize Curl pointer
-    char URL[URL_LEN] = "https://en.langenscheidt.com/german-english/"; 
+    char URL[URL_LEN] = "https://en.langenscheidt.com/german-"; 
     char word[WORD_LEN] = "";
+    char language[WORD_LEN] = "";
 
     if (argc < 2) {
         printf("Please provide a word to be translated!\n");
         return EXIT_FAILURE;
     }
+    if (argc < 3) {
+        printf("Please provide a language!\n");
+        return EXIT_FAILURE;
+    }
 
     strncpy(word, argv[1], strlen(argv[1]));
+    strncpy(language, argv[2], strlen(argv[2]));
+    strncat(URL, language, strlen(language));
+    strcat(URL, "/");
     strncat(URL, word, strlen(word));
 
     if (!curl) {

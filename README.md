@@ -1,4 +1,4 @@
-# german-english-c-translator
+# german-translator
 Simple command-line German to English translator using libcurl and Langenscheidt Wörterbuch as source.
 
 # Dependencies
@@ -11,11 +11,11 @@ libcurl4-gnutls-dev
 
 # Usage
 
-`./german-english <word>`
+`./german-translator <word> <language>`
 
 ## Example
 
-`./german-english haus`
+`./german-translator haus english`
 
 ### Output
 
@@ -34,7 +34,7 @@ Words containing umlaut (¨) needs to be transliterated as follows:
 
 Translation for "übergeben":
 
-`./german-english uebergeben`
+`./german-translator uebergeben english`
 
 ### Output
 

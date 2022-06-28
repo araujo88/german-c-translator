@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-g -Wall
 
-BIN=german-english
+BIN=german-translator
 
 all: $(BIN)
 
