@@ -11,27 +11,37 @@ libcurl4-gnutls-dev
 
 # Usage
 
-`./german-translator <word> <language>`
+`./german-translator <word> <input-language> <output-language>`
 
 ## Example 1
 
-`./german-translator haus english` <br>
+`./german-translator haus german english` <br>
 `house`
 
 ## Example 2
 
-`./german-translator haus french` <br>
+`./german-translator haus german french` <br>
 `maison`
 
 ## Example 3
 
-`./german-translator haus portuguese` <br>
+`./german-translator haus german portuguese` <br>
 `casa`
 
 ## Example 4
 
-`./german-translator haus russian` <br>
+`./german-translator haus german russian` <br>
 `дом`
+
+## Example 5
+
+`./german-translator DEVELOPMENT english german` <br>
+`Entwicklung`
+
+## Example 6
+
+`./german-translator computador portuguese german` <br>
+`Computer`
 
 # NOTE
 
@@ -46,7 +56,7 @@ Words containing umlaut (¨) needs to be transliterated as follows:
 
 Translation for "übergeben":
 
-`./german-translator uebergeben english` <br>
+`./german-translator uebergeben german english` <br>
 `to hand over to... ` <br>
 `vomit... ` <br>
 `to put sth around sb’s shoulders` <br>
