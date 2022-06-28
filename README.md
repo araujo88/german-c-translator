@@ -15,11 +15,11 @@ libcurl4-gnutls-dev
 
 ## Example
 
-`./german-english allerdings`
+`./german-english haus`
 
 ### Output
 
-`though`
+`house`
 
 # NOTE
 
@@ -38,5 +38,7 @@ Translation for "übergeben":
 
 ### Output
 
-`to hand over to...`
+`to hand over to... ` <br>
+`vomit... ` <br>
+`to put sth around sb’s shoulders` <br>
 
