@@ -26,7 +26,7 @@ size_t got_data(char *buffer, size_t itemsize, size_t nitems, void *ignorethis) 
             i++;
         }
         printf("\n");
-        exit(EXIT_SUCCESS);
+        //exit(EXIT_SUCCESS);
     }
     return bytes;
 }
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
     }
 
     strncpy(word, argv[1], strlen(argv[1]));
-    strncat(URL, word, strlen(argv[1]));
+    strncat(URL, word, strlen(word));
 
     if (!curl) {
         fprintf(stderr, "ERROR - failed to initialize Curl\n"); // check for errors in initialization
