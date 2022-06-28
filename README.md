@@ -20,3 +20,23 @@ libcurl4-gnutls-dev
 ### Output
 
 `though`
+
+# NOTE
+
+Words containing umlaut (¨) needs to be transliterated as follows:
+
+ä → ae
+ö → oe
+ü → ue
+ß → ss
+
+## Example
+
+Translation for "übergeben":
+
+`./german-english uebergeben`
+
+### Output
+
+`to hand over to...`
+
