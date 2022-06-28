@@ -36,6 +36,11 @@ int main(int argc, char *argv[]) {
     char URL[URL_LEN] = "https://en.langenscheidt.com/german-english/"; 
     char word[WORD_LEN] = "";
 
+    if (argc < 2) {
+        printf("Please provide a word to be translated!\n");
+        return EXIT_FAILURE;
+    }
+
     strncpy(word, argv[1], strlen(argv[1]));
     strncat(URL, word, strlen(argv[1]));
 
