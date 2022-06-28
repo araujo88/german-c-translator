@@ -9,4 +9,4 @@ all: $(BIN)
 	$(CC) $(CFLAGS) $< -o $@ -lcurl
 
 clean:
-	$(RM) -rf #(BIN) *.dSYM
+	$(RM) -rf $(BIN) *.dSYM
