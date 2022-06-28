@@ -1,5 +1,5 @@
 # german-translator
-Simple command-line German to English translator using libcurl and Langenscheidt Wörterbuch as source.
+Simple command-line German translator using libcurl and Langenscheidt Wörterbuch as source.
 
 # Dependencies
 
