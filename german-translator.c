@@ -45,6 +45,18 @@ int main(int argc, char *argv[]) {
         printf("Please provide a language!\n");
         return EXIT_FAILURE;
     }
+    if (argc > 3) {
+        printf("Too many arguments provided!\n");
+        return EXIT_FAILURE;
+    }
+    if (strlen(argv[1]) > WORD_LEN) {
+        printf("Maximum string length exceeded.\n");
+        return EXIT_FAILURE;
+    }
+    if (strlen(argv[2]) > WORD_LEN) {
+        printf("Maximum string length exceeded.\n");
+        return EXIT_FAILURE;
+    }
 
     strncpy(word, argv[1], strlen(argv[1]));
     strncpy(language, argv[2], strlen(argv[2]));
